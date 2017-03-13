@@ -1,0 +1,51 @@
+﻿/*让窗体背景透明*/
+html, body { background: none; margin:0; padding:0; font-size: 12px; font-family: verdana; }
+/*title提示框*/
+popup { color: #575757; font-size: 12px; font-weight: normal; line-height: 15px; padding: 0 5px; height: 16px; border: 1px solid #767676; }
+/*容器*/
+#wapper {
+	position:relative; width: 850px; height: 600px; background: #dce5ee; border: 1px solid #06263f; border-radius: 5px;
+	background: #1667a5 url(/skin/img/bg.jpg) repeat-x;text-align: left; overflow: hidden;
+}
+/*头部*/
+#header {
+	position:relative; height: 108px; border: 1px solid #4684b4; border-color: #4683b3 #2d77af #0585c0 #2d77af; border-radius: 4px 4px 0 0; behavior:windowCommand;
+}
+/*底部*/
+#footer {
+	position:relative; height: 25px; border: 1px solid #4684b4; border-color: #0c4275 #2d77af #276da6 #27659f; border-radius: 0 0 4px 4px;
+}
+#footer span { color: #d0edff; margin-top: 6px; margin-right: 16px;  }
+#footer span.version { margin-left: 6px; line-height: 12px; }
+#footer span.online { display: block; position:absolute; right: 65px; line-hieght: 0; }
+#footer span.online img { vertical-align: middle; margin-right: 5px; }
+
+/*标题栏*/
+#header h5 { clear: both; height: 24px; margin: 0; border-radius: 4px 4px 0 0;}
+/*标题*/
+#header h5 strong { display: block; float: left; line-height: 24px; color: #7fc4f4; margin-left: 10px; font-size: 11px; }
+/*控制按钮*/
+#header h5 .ctrl {
+	float: right; width: 150px; height: 22px; margin-right: 0px; position:relative; top: -2px; cursor: pointer;
+}
+#header h5 .ctrl a { display: block; height: 20px; width: 34px; background: red; text-indent: -9999px; }
+#header h5 .ctrl a.menu { background: url(/skin/img/menu.png) no-repeat; }
+#header h5 .ctrl a.min { background: url(/skin/img/min.png) no-repeat; behavior:windowCommand;}
+#header h5 .ctrl a.max { background: url(/skin/img/max1.png) no-repeat; behavior:windowCommand;}
+#header h5 .ctrl a.close { width: 47px; background: url(/skin/img/close.png) no-repeat; }
+#header h5 .ctrl a:hover { background-position: -33px 0; }
+#header h5 .ctrl a.close:hover { background-position: -47px 0; }
+/*功能按钮*/
+#header ul { position:absolute; width: 100%; height: 78px; padding: 0;}
+#header ul li {
+	float: left; width: 68px; height: 76px; margin-left: 6px; line-height: 0; overflow:hidden;
+	border: 1px solid transparent; border-radius: 2px;behavior:cmd-button;
+}
+#header ul li:hover { border-color: #61bfed; background: url(/skin/img/icons_bg.png) center; cursor: pointer; }
+#header ul li[selected] { border-color: #61bfed; background: url(/skin/img/icons_selected_bg.png) center; cursor: pointer; }
+#header ul li img { display: block; margin: 3px auto 0 auto; }
+#header ul li span { margin: 10px; color: #fff; }
+/*360商标*/
+#header .360_logo { position:absolute; right: 0; bottom: 0; }
+/*主区域*/
+#main { background: #ecf7fc url(/skin/img/main_bg.png) repeat-x; height: 450px; }
